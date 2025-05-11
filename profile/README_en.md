@@ -14,7 +14,7 @@
   - macro-archetype classification;
   - collaborative annotations and user feedback.
 
-- [`MTG_Scraper`](#)  
+- [`MTG_Scraper`](https://github.com/barrins-project/mtg_scraper)  
   A Python tool using multithreaded scraping to extract tournament results and decklists from sources like MTGO, MTGTop8, and MTGGoldfish.
 
 - [`MTG_Decklist_Cache`](#)  
