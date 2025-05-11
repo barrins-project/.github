@@ -17,7 +17,7 @@
 - [`MTG_Scraper`](https://github.com/barrins-project/mtg_scraper)  
   A Python tool using multithreaded scraping to extract tournament results and decklists from sources like MTGO, MTGTop8, and MTGGoldfish.
 
-- [`MTG_Decklist_Cache`](#)  
+- [`MTG_Decklist_Cache`](https://github.com/barrins-project/mtg_decklist_cache)  
   A repository used to **store raw JSON data** scraped from various sources, sorted by format and date.
 
 ---
