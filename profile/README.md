@@ -18,7 +18,7 @@
 * [`MTG_Scraper`](https://github.com/barrins-project/mtg_scraper)
   Outils Python multithreadés pour le **scraping automatisé** des résultats de tournois depuis plusieurs sources (MTGGoldfish, MTGO, MTGTop8…), avec détection des Top 8, extraction des decklists, rounds, standings, etc.
 
-* [`MTG_Decklist_Cache`](#)
+* [`MTG_Decklist_Cache`](https://github.com/barrins-project/mtg_decklist_cache)
   Dépôt de stockage des données brutes **au format JSON** issues du scraper, classées par format et par date. Sert également de source pour l’outil d’import de l’application `MTG_Viewer`.
 
 ---
