@@ -8,7 +8,7 @@
 
 ## 🗂️ Repositories
 
-- [`MTG_Viewer`](#)  
+- [`MTG_Viewer`](#) *(restricted access)* 
   A **fullstack application** (FastAPI + React + PostgreSQL) allowing:
   - deck and tournament visualization;
   - macro-archetype classification;
