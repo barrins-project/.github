@@ -8,7 +8,7 @@
 
 ## 🗂️ Dépôts de l'organisation
 
-* [`MTG_Viewer`](#)
+* [`MTG_Viewer`](#) *(accès restreint)*
   Projet **fullstack** basé sur **FastAPI**, **React** et **PostgreSQL**, permettant :
 
   * la visualisation des decks, tournois et statistiques associées ;
