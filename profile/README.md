@@ -8,7 +8,7 @@
 
 ## 🗂️ Dépôts de l'organisation
 
-* [`MTG_Viewer`](#) *(accès restreint)*
+* [`MTG_Viewer`](https://github.com/barrins-project/mtg_viewer) *(accès restreint)*
   Projet **fullstack** basé sur **FastAPI**, **React** et **PostgreSQL**, permettant :
 
   * la visualisation des decks, tournois et statistiques associées ;
