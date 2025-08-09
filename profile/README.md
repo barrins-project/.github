@@ -9,6 +9,7 @@
 ## 🗂️ Dépôts de l'organisation
 
 * [`MTG_Viewer`](https://github.com/barrins-project/mtg_viewer) *(accès restreint)*
+  
   Projet **fullstack** basé sur **FastAPI**, **React** et **PostgreSQL**, permettant :
 
   * la visualisation des decks, tournois et statistiques associées ;
@@ -22,6 +23,7 @@
   Dépôt de stockage des données brutes **au format JSON** issues du scraper, classées par format et par date. Sert également de source pour l’outil d’import de l’application `MTG_Viewer`.
 
 * [`MTG_Card_Function_Scoring`](https://github.com/barrins-project/mtg_card_function_scoring) *(accès restreint)*
+  
   Projet temporaire pour le développement d'un système de scoring des cartes par fonctionnalité (`removal`, `counterspell`, `damage`, etc). L'objectif est d'intégrer ce scoring dans les features d'entrainement utilisées par `MTG_Viewer`. *Ce projet utilise SQLite3 pour stocker les données contrairement au reste du projet.*
 
 ---
