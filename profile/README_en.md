@@ -20,6 +20,11 @@
 - [`MTG_Decklist_Cache`](https://github.com/barrins-project/mtg_decklist_cache)  
   A repository used to **store raw JSON data** scraped from various sources, sorted by format and date.
 
+* [`MTG_Card_Function_Scoring`](https://github.com/barrins-project/mtg_card_function_scoring) *(restricted access)* 
+  **Temporary project** to develop a scoring system for MTG cards based on their use (`removal`, `counterspell`, `damage`, etc.).
+  Purpose is to integrate this system in the training features of models used by `MTG_Viewer`.
+  *This project uses SQLite3 to store data unlike the other repos of this project.*
+
 ---
 
 ## 📊 Data Analysis Projects
