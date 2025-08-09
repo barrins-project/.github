@@ -21,6 +21,9 @@
 * [`MTG_Decklist_Cache`](https://github.com/barrins-project/mtg_decklist_cache)
   Dépôt de stockage des données brutes **au format JSON** issues du scraper, classées par format et par date. Sert également de source pour l’outil d’import de l’application `MTG_Viewer`.
 
+* [`MTG_Card_Function_Scoring`](https://github.com/barrins-project/mtg_card_function_scoring) *(accès restreint)*
+  Projet temporaire pour le développement d'un système de scoring des cartes par fonctionnalité (`removal`, `counterspell`, `damage`, etc). L'objectif est d'intégrer ce scoring dans les features d'entrainement utilisées par `MTG_Viewer`. *Ce projet utilise SQLite3 pour stocker les données contrairement au reste du projet.*
+
 ---
 
 ## 📊 Projets d’analyse
@@ -33,6 +36,7 @@ Exploration des métagames à partir des données collectées :
 
   * Réduction de dimension avec **ACP** (Analyse en Composantes Principales)
   * Clustering avec **KMeans**, sélection automatique du nombre optimal de clusters via le **coefficient de silhouette**
+ 
 * **Agrégation de decklists** :
 
   * Fusion des listes d’un même cluster pour créer un *deck représentatif*
