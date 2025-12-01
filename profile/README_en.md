@@ -4,8 +4,6 @@
 
 **Barrin's Project** is a personal initiative focused on analyzing tournament data from *Magic: The Gathering*, with a strong emphasis on competitive formats like *Duel Commander*. The goal is to collect, structure, analyze, and visualize this data to identify trends, build archetypes, and suggest deck improvements.
 
----
-
 ## 🗂️ Repositories
 
 - [`MTG_Viewer`](https://github.com/barrins-project/mtg_viewer) *(restricted access)*
@@ -27,8 +25,6 @@
   Purpose is to integrate this system in the training features of models used by `MTG_Viewer`.
   *This project uses SQLite3 to store data unlike the other repos of this project.*
 
----
-
 ## 📊 Data Analysis Projects
 
 ### 🔹 Statistical Analysis
@@ -49,16 +45,12 @@ Several experiments are underway:
 - Recommend optimal **mana curves** or **key cards**
 - Detect **emerging archetypes**
 
----
-
 ## 🧠 Tech Stack
 
 - **Backend**: FastAPI, SQLAlchemy, PostgreSQL  
 - **Frontend**: React, Vite, Tailwind CSS  
 - **Data Science**: pandas, scikit-learn, XGBoost, matplotlib, seaborn  
 - **Scraping**: requests, BeautifulSoup, asyncio, multithreading
-
----
 
 ## 🎯 Objectives
 
