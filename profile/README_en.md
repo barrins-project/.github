@@ -1,7 +1,8 @@
 # Barrin's Project
+
 [Français](README.md) | [English](README_en.md)
 
-**Barrin's Project** is a personal initiative dedicated to analyzing tournament data from _Magic: The Gathering_, with an exclusive focus on the competitive **Duel Commander** format. The goal is to collect, structure, analyze, and visualize this data in order to extract trends, map archetypes, and support deckbuilding work.
+**Barrin's Project** is a personal initiative dedicated to analyzing tournament data from _Magic: The Gathering_, with a particular focus on competitive formats. The project currently covers **Duel Commander** and **Modern**, and is designed to progressively extend to all formats supported by the data collection pipeline. The goal is to collect, structure, analyze, and visualize this data in order to extract trends, map archetypes, and support deckbuilding work.
 
 ## 🗂️ Public repositories
 
@@ -14,10 +15,13 @@
 ## 🔒 Private repositories
 
 * [`Barrins_API`](https://github.com/barrins-project/barrins_api)
-  Main backend of the project, acting as a **BFF (Backend For Frontend)** for `Tolaria_News`: FastAPI service (Python 3.14, async SQLAlchemy via `asyncpg` + sync via `psycopg2-binary`, PostgreSQL, Alembic, Pydantic v2) fed by `MTG_Decklist_Cache`, Scryfall, MTGTop8, MTGO, and GitHub through httpx + tenacity, with Redis caching. JWT authentication (`python-jose`) + Argon2id (`argon2-cffi`), quality enforced by pytest (+ asyncio, ≥ 90 % coverage required), Ruff, strict mypy, and bandit.
+  Main backend of the project, acting as a **BFF (Backend For Frontend)** for `Tolaria_News` and `Tamiyo_Scroll`: FastAPI service (Python 3.14, async SQLAlchemy via `asyncpg` + sync via `psycopg2-binary`, PostgreSQL, Alembic, Pydantic v2) fed by `MTG_Decklist_Cache`, Scryfall, MTGTop8, MTGO, and GitHub through httpx + tenacity, with Redis caching. JWT authentication (`python-jose`) + Argon2id (`argon2-cffi`), quality enforced by pytest (+ asyncio, ≥ 90 % coverage required), Ruff, strict mypy, and bandit.
 
 * [`Tolaria_News`](https://github.com/barrins-project/tolaria_news)
-  Frontend dedicated to Duel Commander metagame visualization, consuming `Barrins_API` through a Vite proxy and structured around five main views (*Metagame*, *Archetypes*, *Decklists*, *Tournaments*, *Trends*) plus a *Landing Page*. React 19 + Vite 8 application (React Router 7, TanStack Query 5, Recharts 3) with a custom design system, hand-crafted SVG visualizations, and a Husky pre-commit hook.
+  Frontend dedicated to **Duel Commander** metagame visualization, consuming `Barrins_API` through a Vite proxy and structured around five main views (*Metagame*, *Archetypes*, *Decklists*, *Tournaments*, *Trends*) plus a *Landing Page*. React 19 + Vite 8 application (React Router 7, TanStack Query 5, Recharts 3) with a custom design system, hand-crafted SVG visualizations, and a Husky pre-commit hook.
+
+* [`Tamiyo_Scroll`](https://github.com/barrins-project/tamiyo_scroll) _(under development)_
+  Frontend dedicated to **Modern** metagame visualization, consuming `Barrins_API`. Designed as a continuation of `Tolaria_News`, it applies the same analysis pipeline (clustering, aggregation, scoring) to the Modern format.
 
 ## 📊 Analysis projects
 
@@ -79,12 +83,13 @@ Installed dependencies (`scikit-learn`, `xgboost`, `optuna`, `umap-learn`, `mlxt
 * **HTTP / external integrations**: httpx, tenacity, requests (Scryfall, MTGTop8, MTGO, GitHub)
 * **ML / Data Science**: scikit-learn, XGBoost, Optuna, NumPy, pandas, SciPy, Plotly, Kaleido, fpdf2, mlxtend, networkx, umap-learn, pyarrow
 * **Frontend (Tolaria_News)**: React 19, Vite 8, React Router 7, TanStack Query 5, Recharts 3
+* **Frontend (Tamiyo_Scroll)**: to be defined
 * **Scraping (MTG_Scraper, Python 3.12+)**: BeautifulSoup4, requests, Selenium, webdriver-manager, pandas, lxml, Pydantic
 * **Quality**: Ruff + strict mypy + bandit (backend), ESLint 10 + Husky (frontend), pytest + pytest-asyncio + pytest-cov (≥ 90 % coverage enforced)
 
 ## 📌 Goals
 
-* Build a **rich and structured database** of competitive Duel Commander decks.
+* Build a **rich and structured database** of competitive MTG decks across all formats.
 * Help players **visualize the metagame**, identify trends, and refine their lists.
 * Provide an experimentation ground for **clustering, aggregation, and scoring** models applied to deckbuilding.
-* Eventually extend the analysis pipeline to the other formats already supported by the scraper (Standard, Pioneer, Modern, Legacy, Vintage, Pauper, Premodern) once Duel Commander automation has stabilized.
+* Progressively extend the analysis pipeline to all formats supported by the scraper (Standard, Pioneer, Modern, Legacy, Vintage, Pauper, Premodern), using **Duel Commander** as the reference format and **Modern** as the first additional format.
